@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Product TitleS",
+    "description": "Product DescriptionS",
+    "code": "Product CodeS",
+    "price": 11,
+    "status": true,
+    "stock": 1,
+    "category": "CategoriaS"
+  },
+  {
+    "id": 3,
+    "title": "Product TitleS",
+    "description": "Product DescriptionS",
+    "code": "Product CodeS",
+    "price": 11,
+    "status": true,
+    "stock": 1,
+    "category": "CategoriaS"
+  },
+  {
+    "id": 4,
+    "title": "Product Title4",
+    "description": "Product Description4",
+    "code": "Product Code4",
+    "price": 4,
+    "status": true,
+    "stock": 1,
+    "category": "Categoria4"
+  }
+]
