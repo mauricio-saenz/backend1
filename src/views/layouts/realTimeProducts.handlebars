@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <script id="products-template" type="text/x-handlebars-template">
+        {{#each products}}
+        <p>Title: {{id}}</p>
+        <p>Title: {{title}}</p>
+        <p>Price: ${{price}}</p>
+        <p>Description: {{description}}</p>
+        <p>Code: {{code}}</p>
+        <p>Price: {{price}}</p>
+        <p>Status: {{status}}</p>
+        <p>Stock: {{stock}}</p>
+        <p>Category: {{category}}</p>
+        <p>Thumbnails: {{thumbnails}}</p>
+        <hr>
+        {{/each}}
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const socket = new WebSocket('ws://localhost:3000');
+
+            socket.onmessage = function(event) {
+                console.log(event.data.products)
+                const data = JSON.parse(event.data.products);
+                updateProducts(event.data.products);
+            };
+
+            function updateProducts(products) {
+                const templateSource = document.getElementById('products-template').innerHTML;
+                const template = Handlebars.compile(templateSource);
+                const html = template({ products });
+                document.getElementById('products-container').innerHTML = html;
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <hr>
+    <div id="products-container">
+        {{#each products}}
+        <p>Title: {{id}}</p>
+        <p>Title: {{title}}</p>
+        <p>Price: ${{price}}</p>
+        <p>Description: {{description}}</p>
+        <p>Code: {{code}}</p>
+        <p>Price: {{price}}</p>
+        <p>Status: {{status}}</p>
+        <p>Stock: {{stock}}</p>
+        <p>Category: {{category}}</p>
+        <p>Thumbnails: {{thumbnails}}</p>
+        <hr>
+        {{/each}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 3,
+    "title": "ss",
+    "description": "Product Description",
+    "code": "Product Code",
+    "price": 11,
+    "status": true,
+    "stock": 1,
+    "category": "Categoria",
+    "thumbnails": [
+      "Thumbnail1",
+      "Thumbnail2",
+      "Thumbnail3"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Product Title",
+    "description": "Product Description",
+    "code": "Product Code",
+    "price": 11,
+    "status": true,
+    "stock": 1,
+    "category": "Categoria",
+    "thumbnails": [
+      "Thumbnail1",
+      "Thumbnail2",
+      "Thumbnail3"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Product Title",
+    "description": "Product Description",
+    "code": "Product Code",
+    "price": 11,
+    "status": true,
+    "stock": 1,
+    "category": "Categoria",
+    "thumbnails": [
+      "Thumbnail1",
+      "Thumbnail2",
+      "Thumbnail3"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Un producto",
+    "description": "Una descripcion",
+    "code": "Codigo del producto",
+    "price": 1,
+    "status": false,
+    "stock": 10,
+    "category": "Una categoria",
+    "thumbnails": [
+      "Thumbnail",
+      "Thumbnail",
+      "Thumbnail"
+    ]
+  }
+]
